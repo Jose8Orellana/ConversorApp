@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="Moneda Local"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/lblnum1"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblRespuesta"
+        android:layout_marginTop="40dp"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optMonedas" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Conversion: ?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:layout_marginTop="16dp"
+        android:text="Seleccione Moneda a Convertir:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <RadioGroup
+        android:id="@+id/optMonedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitulo">
+
+        <RadioButton
+            android:id="@+id/optEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Euro" />
+
+        <RadioButton
+            android:id="@+id/optPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso Mex" />
+
+        <RadioButton
+            android:id="@+id/optColon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colón CR" />
+
+        <RadioButton
+            android:id="@+id/optQuetzal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quetzal" />
+
+        <RadioButton
+            android:id="@+id/optLempira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lempira" />
+
+        <RadioButton
+            android:id="@+id/optCordoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Córdoba" />
+
+        <RadioButton
+            android:id="@+id/optbalboa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balboa" />
+
+        <RadioButton
+            android:id="@+id/optYanes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yuanes" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@+id/txtnum1"
+        android:text="Ingrese Cantidad:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txttitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

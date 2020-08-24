@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Conversor App</string>
+    <string name="title_activity_masa">Masa</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string-array name="Conversiones">
+        <item>Seleccione Volumen</item>
+        <item>Galon</item>
+        <item>Taza</item>
+        <item>Metro Cubico</item>
+        <item>Mililitro</item>
+        <item>Barril</item>
+    </string-array>
+
+    <string-array name="Longitudes">
+        <item>Seleccione Longitud</item>
+        <item>Kilometro</item>
+        <item>Centimetro</item>
+        <item>Milimetro</item>
+        <item>Milla</item>
+        <item>Yarda</item>
+        <item>Pie</item>
+        <item>Pulgada</item>
+    </string-array>
+</resources>
